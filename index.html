@@ -579,6 +579,64 @@
     margin-top: 1px;
   }
 
+  /* RECOMMENDATIONS */
+  .rec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+  }
+
+  .rec-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 32px;
+    position: relative;
+    transition: border-color 0.2s;
+  }
+
+  .rec-card:hover { border-color: var(--accent); }
+
+  .rec-quote-mark {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .rec-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .rec-title {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .rec-contact {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .rec-contact a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .rec-contact a:hover { color: var(--accent); }
+
   /* PROJECTS */
   .project-card {
     background: var(--card);
@@ -964,6 +1022,7 @@
     <li><a href="#experience">EXPERIENCE</a></li>
     <li><a href="#skills">SKILLS</a></li>
     <li><a href="#certs">CERTS</a></li>
+    <li><a href="#recommendations">RECS</a></li>
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
@@ -1172,10 +1231,46 @@
   </div>
 </section>
 
+<!-- RECOMMENDATIONS -->
+<section id="recommendations" style="padding-top: 0;">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2 class="section-title">RECOMMENDATIONS</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="rec-grid">
+    <div class="rec-card">
+      <div class="rec-quote-mark">"</div>
+      <div class="rec-name">Ioannis (Yannis) Demertzis</div>
+      <div class="rec-title">Assistant Professor, Cryptography · UC Santa Cruz</div>
+      <div class="rec-contact">
+        <span>✉ <a href="mailto:idemertz@ucsc.edu">idemertz@ucsc.edu</a></span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-quote-mark">"</div>
+      <div class="rec-name">David Ruiz</div>
+      <div class="rec-title">Lead Manager · Dynamic Active</div>
+      <div class="rec-contact">
+        <span>☎ (626) 215-0721</span>
+      </div>
+    </div>
+    <div class="rec-card">
+      <div class="rec-quote-mark">"</div>
+      <div class="rec-name">Matthew Medina</div>
+      <div class="rec-title">Founding Lead Investor · Dynamic Active</div>
+      <div class="rec-contact">
+        <span>☎ (626) 215-0721</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects" style="padding-top: 0;">
   <div class="section-header">
-    <span class="section-num">05</span>
+    <span class="section-num">06</span>
     <h2 class="section-title">PROJECTS</h2>
     <div class="section-line"></div>
   </div>
@@ -1269,7 +1364,7 @@
 <!-- LINKS -->
 <section style="padding-top: 0;">
   <div class="section-header">
-    <span class="section-num">06</span>
+    <span class="section-num">07</span>
     <h2 class="section-title">PROFILES</h2>
     <div class="section-line"></div>
   </div>
