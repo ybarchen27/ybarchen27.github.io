@@ -1121,7 +1121,11 @@
       <div class="exp-date">JUL 2026 – PRESENT</div>
     </div>
     <ul class="exp-points">
-      <li>Currently helping to identify and remediate security vulnerabilities across Dynamic Active's AI-powered application and cloud networks via Postman, including gaps in Authentication, Authorization, and susceptibility to brute-force attacks.</li>
+      <li>Audit backend and frontend APIs against the OWASP Top 10 using Postman; enforce role-based access control so accounts and endpoints require proper authorization.</li>
+      <li>Fixed a brute-force vulnerability by building a dual-key rate-limiting system (tracking IP address plus attempted credentials) on a Redis store powered by Upstash.</li>
+      <li>Fixed a session/JWT reuse vulnerability by cutting token lifetime from a 30-day expiration to 15 minutes and introducing refresh tokens to reissue short-lived JWTs.</li>
+      <li>Improved API scalability with in-memory TTL caching, serialization caching, and per-user permission-filter caching, backed by automatic cache invalidation for fresh, low-latency responses; load-tested with Locust to validate performance under thousands of concurrent users.</li>
+      <li>Manage account provisioning and role-based access for coworkers using Supabase (SQL) and Google OAuth.</li>
     </ul>
   </div>
 </section>
@@ -1138,6 +1142,10 @@
     <div class="skill-group">
       <div class="skill-group-title">CYBERSECURITY</div>
       <div class="skill-tags">
+        <div class="skill-tag">OWASP Top 10</div>
+        <div class="skill-tag">API Security</div>
+        <div class="skill-tag">Rate Limiting</div>
+        <div class="skill-tag">JWT / OAuth 2.0</div>
         <div class="skill-tag">Access Control</div>
         <div class="skill-tag">Cryptography</div>
         <div class="skill-tag">Data Security</div>
@@ -1149,12 +1157,7 @@
         <div class="skill-tag">Threat Detection</div>
         <div class="skill-tag">Threat Management</div>
         <div class="skill-tag">CompTIA</div>
-        <div class="skill-tag">Cyber Forensics</div>
-        <div class="skill-tag">Disaster Recovery Planning</div>
-        <div class="skill-tag">Firewall Configuration</div>
-        <div class="skill-tag">Malware Identification</div>
         <div class="skill-tag">Cybersecurity Fundamentals</div>
-        <div class="skill-tag">Mobile Device Security</div>
         <div class="skill-tag">Security Configuration</div>
       </div>
     </div>
@@ -1167,11 +1170,16 @@
         <div class="skill-tag">SQL</div>
         <div class="skill-tag">Linux</div>
         <div class="skill-tag">Git / GitHub</div>
+        <div class="skill-tag">Docker</div>
         <div class="skill-tag">SolidWorks</div>
         <div class="skill-tag">Database Design</div>
         <div class="skill-tag">Network Fundamentals</div>
         <div class="skill-tag">Operating System Fundamentals</div>
-        <div class="skill-tag">Programming and Scripting Fundamentals</div>
+        <div class="skill-tag">Object-Oriented Programming (OOP)</div>
+        <div class="skill-tag">Redis</div>
+        <div class="skill-tag">Supabase</div>
+        <div class="skill-tag">Locust</div>
+        <div class="skill-tag">Google OAuth</div>
       </div>
     </div>
     <div class="skill-group">
@@ -1253,7 +1261,7 @@
       <div class="rec-name">David Ruiz</div>
       <div class="rec-title">Lead Manager · Dynamic Active</div>
       <div class="rec-contact">
-        <span>☎ (626) 215-0721</span>
+        <span>☎ (626) 532-2997</span>
       </div>
     </div>
     <div class="rec-card">
@@ -1297,8 +1305,9 @@
     <div class="project-card">
       <div class="project-title">Path-ORAM & SEAL Implementation</div>
       <div class="project-desc">
-        Built full Path-ORAM and SEAL modules with partners, including query recovery attacks
-        and dataset recovery attacks. Validated modules against a real-world dataset.
+        Co-built a full Path-ORAM implementation with a partner team, contributing to the client, tree,
+        stash, bucket, position map, and block components. Solely designed and implemented query recovery
+        and dataset recovery attacks against the ORAM and SEAL schemes, validated against a real-world dataset.
       </div>
       <div class="project-tech">
         <span>CRYPTOGRAPHY</span>
