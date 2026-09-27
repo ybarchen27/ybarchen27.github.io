@@ -1126,6 +1126,8 @@
       <li>Fixed a session/JWT reuse vulnerability by cutting token lifetime from a 30-day expiration to 15 minutes and introducing refresh tokens to reissue short-lived JWTs.</li>
       <li>Improved API scalability with in-memory TTL caching, serialization caching, and per-user permission-filter caching, backed by automatic cache invalidation for fresh, low-latency responses; load-tested with Locust to validate performance under thousands of concurrent users.</li>
       <li>Manage account provisioning and role-based access for coworkers using Supabase (SQL) and Google OAuth.</li>
+      <li>Implemented centralized security monitoring by integrating application logs with Wazuh SIEM; configured custom detection and correlation rules.</li>
+      <li>Integrated Semgrep SAST and npm audit into GitHub Actions CI/CD pipeline for automated static analysis and dependency vulnerability scanning.</li>
     </ul>
   </div>
 </section>
@@ -1159,17 +1161,24 @@
         <div class="skill-tag">CompTIA</div>
         <div class="skill-tag">Cybersecurity Fundamentals</div>
         <div class="skill-tag">Security Configuration</div>
+        <div class="skill-tag">SIEM (Wazuh)</div>
+        <div class="skill-tag">SAST (Semgrep)</div>
+        <div class="skill-tag">CI/CD Security</div>
+        <div class="skill-tag">Dependency Vulnerability Scanning</div>
+        <div class="skill-tag">BOLA</div>
       </div>
     </div>
     <div class="skill-group">
       <div class="skill-group-title">PROGRAMMING & TOOLS</div>
       <div class="skill-tags">
         <div class="skill-tag">Python</div>
+        <div class="skill-tag">TypeScript</div>
         <div class="skill-tag">C</div>
         <div class="skill-tag">C++</div>
         <div class="skill-tag">SQL</div>
         <div class="skill-tag">Linux</div>
         <div class="skill-tag">Git / GitHub</div>
+        <div class="skill-tag">GitHub Actions</div>
         <div class="skill-tag">Docker</div>
         <div class="skill-tag">SolidWorks</div>
         <div class="skill-tag">Database Design</div>
@@ -1180,6 +1189,7 @@
         <div class="skill-tag">Supabase</div>
         <div class="skill-tag">Locust</div>
         <div class="skill-tag">Google OAuth</div>
+        <div class="skill-tag">npm</div>
       </div>
     </div>
     <div class="skill-group">
